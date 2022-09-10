@@ -1,25 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 /**
  * main - Entry point
  *
- * Return: Always return 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char low;
+	char alpha;
 
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+		putchar(alpha);
+	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+		putchar(alpha);
 
-	for (low = 'a'; low <= 'z'; low++)
-	{
-		putchar(low);
-	};
-
-	for (low = 'A'; low <= 'Z'; low++)
-		putchar(low);
-	putchar('\n');	
+	putchar('\n');
 
 	return (0);
 }
