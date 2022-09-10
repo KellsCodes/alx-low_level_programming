@@ -5,6 +5,8 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ *
+ * Description: Checks random number generated if it is positive, zero or negative
  */
 int main(void)
 {
