@@ -2,11 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - Entry point
+ * main-Entry point
  *
- * Return: Always 0 (Success)
+ * Return:Always 0 (Success)
  *
- * Description: Checks random number if it is positive, zero or negative
  */
 int main(void)
 {
