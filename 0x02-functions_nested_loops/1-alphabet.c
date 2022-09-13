@@ -1,3 +1,5 @@
+void print_alphabet(void);
+
 #include "main.h"
 
 /**
