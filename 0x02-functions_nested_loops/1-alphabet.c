@@ -1,6 +1,6 @@
-void print_alphabet(void);
-
 #include "main.h"
+
+void print_alphabet(void);
 
 /**
  * main - Entry point
@@ -9,6 +9,17 @@ void print_alphabet(void);
  */
 int main(void)
 {
+	print_alphabet();
+	_putchar('\n');
+	return (0);
+}
+
+/*function that prints the alphabets*/
+/**
+ * print_alphabet - function that prints the 26 english letters in lowercase
+ */
+void print_alphabet(void)
+{
 	char alphabet = 'a';
 
 	while (alphabet <= 'z')
@@ -16,6 +27,4 @@ int main(void)
 		_putchar(alphabet);
 		alphabet++;
 	}
-	_putchar('\n');
-	return (0);
 }
