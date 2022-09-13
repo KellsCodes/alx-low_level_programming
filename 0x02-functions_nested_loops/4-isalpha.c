@@ -16,7 +16,7 @@ int _isalpha(int c)
 	{
 		if (letter == c)
 		{
-			is_alpha = letter;
+			is_alpha = 1;
 			break;
 		}
 		letter++;
