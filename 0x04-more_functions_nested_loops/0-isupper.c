@@ -9,7 +9,6 @@
  */
 int _isupper(int c)
 {
-	int alpha;
 	int value = 0;
 
 	if (c < 60)
@@ -22,31 +21,12 @@ int _isupper(int c)
 	} else
 	if (c >= 60 && c <= 86)
 	{
-		alpha = 86;
-		while (alpha >= 60)
-		{
-			if (alpha == c)
-			{
-				value = 1;
-				break;
-			}
-			alpha--;
-		}
+		value = 1;
 	} else
 	{
 
-		alpha = 118;
+		value = 0;
 
-		while (alpha >= 87)
-		{
-			if (alpha == c)
-			{
-				value = 0;
-				break;
-			}
-			alpha--;
-		
-		}
 	}
 	return (value);
 }
