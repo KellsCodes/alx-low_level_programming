@@ -11,15 +11,15 @@ int _isupper(int c)
 {
 	int value = 0;
 
-	if (c < 60)
+	if (c < 65)
 	{
 		value = 0;
 	} else
-	if (c > 118)
+	if (c > 122)
 	{
 		value = 0;
 	} else
-	if (c >= 60 && c <= 86)
+	if (c >= 65 && c <= 90)
 	{
 		value = 1;
 	} else
