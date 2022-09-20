@@ -9,16 +9,11 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0, len = 0;
+	char *temp = dest;
 
-	while (src[len] != '\n')
+	while (*src)
 	{
-		len++;
+		*dest++ = *src++;
 	}
-
-	for (; i <= len; i++)
-	{
-		dest[i] = src[i];
-	}
-	return (dest);
+	return (temp);
 }
