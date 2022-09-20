@@ -2,7 +2,7 @@
 
 /**
  * puts_half - prints the second half of a string
- * 
+ *
  * @str: pointer deferencing
  * Return: Always 0
  */
@@ -16,7 +16,7 @@ void puts_half(char *str)
 	if ((len % 2) == 0)
 	{
 		i = len / 2;
-	}else
+	} else
 	{
 		i = (len - 1) / 2;
 	}
