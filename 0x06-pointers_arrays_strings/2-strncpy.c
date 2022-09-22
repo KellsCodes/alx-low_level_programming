@@ -5,7 +5,8 @@
  *
  * @dest: destination pointer
  * @src: source pointer
- * Return: characters are returned
+ * @n: number to copy upto
+ * Return: characters
  */
 char *_strncpy(char *dest, char *src, int n)
 {
