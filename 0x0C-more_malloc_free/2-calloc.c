@@ -12,7 +12,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	memallocated = calloc(nmemb, size);
 
-	if (nmemb == 0 || size == 0 || memallocated == NULL)
+	if (nmemb <= 0 || size <= 0 || memallocated == NULL)
 		return (NULL);
 	return (memallocated);
 }
