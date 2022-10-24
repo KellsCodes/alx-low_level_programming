@@ -17,4 +17,6 @@ typedef struct dog
 	char *owner;
 } dob_obj;
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif /*MAIN_H*/
