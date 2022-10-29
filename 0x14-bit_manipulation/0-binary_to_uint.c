@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_unit - converts a binary number to an unsigned int
+ * binary_to_uint - converts a binary number to an unsigned int
  *
  * @b: binary number pointer
  *
@@ -9,11 +9,11 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int uint = 0, num_of_chars = 0;
-	int i = 0;
+	int i = 0, k = 0;
+	const char *temp_value = b;
 
 	if (b == NULL)
 		return (0);
-
 	while (*b != '\0')
 	{
 		if (*b < 48 || *b > 49)
@@ -21,32 +21,21 @@ unsigned int binary_to_uint(const char *b)
 			num_of_chars++;
 			break;
 		}
-		i++;
-		b++;
+		i++, b++;
 	}
 	if (num_of_chars >= 1)
 		return (0);
-
-	b = b - 1;
-
-	while (i >= 0)
+	while (k < i)
 	{
-		int power = 1, j;
-		
-		if (i > 0)
+		int tempPower = 1, num = temp_value[k], j = i - (k + 1);
+
+		while (j > 0)
 		{
-			for (j = 1; j <= i; ++j)
-				power = power * 2;
+			tempPower *= 2;
+			j--;
 		}
-
-		printf("%d power\n", power);
-		if (*b == 48)
-			uint = uint + 0 * power;
-		else
-			uint = uint + 1 * power;
-		i--;
-		b--;
+		uint += num == 48 ? 0 * tempPower : 1 * tempPower;
+		k++;
 	}
-
 	return (uint);
 }
